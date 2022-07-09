@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Shadow fight 1</title>
+    <link rel="stylesheet" href="shadow.css">
+</head>
+<body>
+    <div style="position: relative; display:inline-block">
+        <div class="container">
+            <!-- player health -->
+            <div style="position:relative; display:flex; align-items: center; justify-content:flex-end; width:100%;
+             border-top: 4px solid white;
+             border-bottom: 4px solid white;
+             border-left: 4px solid white;">
+            <div class="player"></div>
+            <div id="playerHealth" style="position:absolute; background-color: rgb(80, 27, 93); height:20px; top:0; bottom:0;  right:0; width:100%"></div>
+            </div>
+            <!-- timer -->
+            <div class="timer">10</div>
+            <!-- enemy health -->
+            <div style="position:relative;
+             background-color: red;
+              width:100%;
+              border-top: 4px solid white;
+             border-bottom: 4px solid white;
+             border-right: 4px solid white;">
+            <div class="enemy"></div>
+            <div id="enemyHealth" style="position:absolute; background-color: rgb(80, 27, 93); height:20px; top:0; bottom:0 ; right: 0 ; left:0;"></div>
+            </div>
+
+        </div>
+        <div id="text" style="position:absolute; color:white; align-items:center;
+        justify-content:center; 
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        display:none;">Start</div>
+    <canvas></canvas>
+    </div>
+    <script src="./js/utility.js"></script> 
+    <script src="./js/class.js"></script> 
+   <script src="shadow.js"></script> 
+</body>
+</html>
